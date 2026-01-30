@@ -118,7 +118,7 @@ This library is freely available under the **CC BY-NC-SA 4.0 License** for non-c
 
 For commercial use, please contact us:
 
-- **Email**: prathmesh@example.com
+- **Email**: choudhariprathmesh001@gmail.com
 - **GitHub**: [@iampratham29](https://github.com/iampratham29)
 - **Subject**: "marathi-shabda Commercial License Inquiry"
 
