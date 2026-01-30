@@ -38,9 +38,9 @@ VIBHAKTI_SUFFIXES: List[VibhaktiRule] = [
     VibhaktiRule("वर", VibhaktiType.SAPTAMI, 2),  # अधिकरण
     VibhaktiRule("ला", VibhaktiType.CHATURTHI, 2),  # संप्रदान
     VibhaktiRule("शी", VibhaktiType.SAPTAMI, 2),
-    VibhaktiRule("ची", VibhaktiType.SAMBANDH, 2),  # संबंध (feminine)
-    VibhaktiRule("चा", VibhaktiType.SAMBANDH, 2),  # संबंध (masculine)
-    VibhaktiRule("चे", VibhaktiType.SAMBANDH, 2),  # संबंध (neuter/plural)
+    VibhaktiRule("ची", VibhaktiType.SAMBANDH, 2),  # संबोधन (feminine)
+    VibhaktiRule("चा", VibhaktiType.SAMBANDH, 2),  # संबोधन (masculine)
+    VibhaktiRule("चे", VibhaktiType.SAMBANDH, 2),  # संबोधन (neuter/plural)
     VibhaktiRule("त", VibhaktiType.SAPTAMI, 2),   # अधिकरण
     VibhaktiRule("स", VibhaktiType.CHATURTHI, 2),
     

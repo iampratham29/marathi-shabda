@@ -33,10 +33,10 @@ class VibhaktiType(Enum):
     TRUTIYA = "तृतीया"  # Instrumental (करण)
     CHATURTHI = "चतुर्थी"  # Dative (संप्रदान)
     PANCHAMI = "पंचमी"  # Ablative (अपादान)
-    SHASHTHI = "षष्ठी"  # Genitive (संबंध)
+    SHASHTHI = "षष्ठी"  # Genitive (संबोधन)
     SAPTAMI = "सप्तमी"  # Locative (अधिकरण)
     SAMBODHANA = "संबोधन"  # Vocative
-    SAMBANDH = "संबंध"  # Possessive (चा/ची/चे)
+    SAMBANDH = "संबोधन"  # Possessive (चा/ची/चे)
 
 
 class KaalType(Enum):

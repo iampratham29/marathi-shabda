@@ -42,7 +42,7 @@ Marathi language tooling lags behind other Indian languages. Existing solutions 
 ### ✅ Supported Features
 
 - **Lemma extraction**: `पाण्यावर` → `पाणी` (water)
-- **Vibhakti detection**: Identifies case markers (तृतीया, सप्तमी, संबंध, etc.)
+- **Vibhakti detection**: Identifies case markers (तृतीया, सप्तमी, संबोधन, etc.)
 - **Dictionary lookup**: Marathi → English meanings
 - **POS tagging**: Conservative noun/verb/adjective classification
 - **Kāl inference**: Basic tense detection for verbs
