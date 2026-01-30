@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marathi-shabda"
+version = "0.1.2"
+description = "Deterministic, offline Marathi word analysis library (shabda = word in Marathi)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "CC-BY-NC-SA-4.0"}
+authors = [
+    {name = "Prathmesh Santosh Choudhari, Siddhant Akash Bobde, Vedangi Deepak Deshpande"}
+]
+keywords = ["marathi", "nlp", "morphology", "dictionary", "devanagari", "lemmatization"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: Free For Educational Use",
+    "License :: Other/Proprietary License",
+    "Natural Language :: Marathi",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# No runtime dependencies - pure Python stdlib
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+    "build>=0.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/iampratham29/marathi-shabda"
+Documentation = "https://github.com/iampratham29/marathi-shabda#readme"
+Repository = "https://github.com/iampratham29/marathi-shabda"
+Issues = "https://github.com/iampratham29/marathi-shabda/issues"
+
+[project.scripts]
+marathi-shabda = "marathi_shabda.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+marathi_shabda = ["data/*.db"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=marathi_shabda --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "C4", "DTZ", "T10", "EM", "ISC", "ICN", "PIE", "PT", "Q", "RSE", "RET", "SIM", "TID", "ARG", "PLE", "PLW", "RUF"]
+ignore = ["E501"]  # Line too long (handled by formatter)
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+strict_equality = true
