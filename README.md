@@ -39,7 +39,7 @@
 - 🏢 **कंपनी अंतर्गत टूल्स** (Internal Company Tools)
 
 **व्यावसायिक लायसन्ससाठी संपर्क करा:**
-- **Email**: prathmesh@example.com
+- **Email**: choudhariprathmesh001@gmail.com
 - **GitHub**: [@iampratham29](https://github.com/iampratham29)
 
 ---
@@ -124,7 +124,7 @@ You **cannot** use it for the following without a commercial license:
 - SaaS or API services for profit
 
 **For commercial inquiries:**
-- **Email**: prathmesh@example.com
+- **Email**: choudhariprathmesh001@gmail.com
 - **GitHub**: [@iampratham29](https://github.com/iampratham29)
 - **Subject**: "marathi-shabda Commercial License Inquiry"
 
