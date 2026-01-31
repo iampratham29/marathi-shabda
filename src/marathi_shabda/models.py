@@ -36,7 +36,6 @@ class VibhaktiType(Enum):
     SHASHTHI = "षष्ठी"  # Genitive (संबोधन)
     SAPTAMI = "सप्तमी"  # Locative (अधिकरण)
     SAMBODHANA = "संबोधन"  # Vocative
-    SAMBANDH = "संबोधन"  # Possessive (चा/ची/चे)
 
 
 class KaalType(Enum):

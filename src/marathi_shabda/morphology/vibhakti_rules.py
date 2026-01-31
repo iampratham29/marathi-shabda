@@ -38,9 +38,9 @@ VIBHAKTI_SUFFIXES: List[VibhaktiRule] = [
     VibhaktiRule("वर", VibhaktiType.SAPTAMI, 2),  # अधिकरण
     VibhaktiRule("ला", VibhaktiType.CHATURTHI, 2),  # संप्रदान
     VibhaktiRule("शी", VibhaktiType.SAPTAMI, 2),
-    VibhaktiRule("ची", VibhaktiType.SAMBANDH, 2),  # संबोधन (feminine)
-    VibhaktiRule("चा", VibhaktiType.SAMBANDH, 2),  # संबोधन (masculine)
-    VibhaktiRule("चे", VibhaktiType.SAMBANDH, 2),  # संबोधन (neuter/plural)
+    VibhaktiRule("ची", VibhaktiType.SHASHTHI, 2),  # संबोधन (feminine)
+    VibhaktiRule("चा", VibhaktiType.SHASHTHI, 2),  # संबोधन (masculine)
+    VibhaktiRule("चे", VibhaktiType.SHASHTHI, 2),  # संबोधन (neuter/plural)
     VibhaktiRule("त", VibhaktiType.SAPTAMI, 2),   # अधिकरण
     VibhaktiRule("स", VibhaktiType.CHATURTHI, 2),
     
@@ -53,9 +53,9 @@ VIBHAKTI_SUFFIXES: List[VibhaktiRule] = [
     # Oblique forms (common in compound vibhaktis)
     VibhaktiRule("ांना", VibhaktiType.CHATURTHI, 1),  # Plural dative
     VibhaktiRule("ांनी", VibhaktiType.TRUTIYA, 1),   # Plural instrumental
-    VibhaktiRule("ांचा", VibhaktiType.SAMBANDH, 1),  # Plural possessive (masc)
-    VibhaktiRule("ांची", VibhaktiType.SAMBANDH, 1),  # Plural possessive (fem)
-    VibhaktiRule("ांचे", VibhaktiType.SAMBANDH, 1),  # Plural possessive (neut)
+    VibhaktiRule("ांचा", VibhaktiType.SHASHTHI, 1),  # Plural possessive (masc)
+    VibhaktiRule("ांची", VibhaktiType.SHASHTHI, 1),  # Plural possessive (fem)
+    VibhaktiRule("ांचे", VibhaktiType.SHASHTHI, 1),  # Plural possessive (neut)
     VibhaktiRule("ांवर", VibhaktiType.SAPTAMI, 1),   # Plural locative
     VibhaktiRule("ांत", VibhaktiType.SAPTAMI, 1),    # Plural locative
 ]
