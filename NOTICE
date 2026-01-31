@@ -1,0 +1,24 @@
+This project uses a split licensing model to balance open-source collaboration with data protection.
+
+=======================================================================
+1. SOURCE CODE
+=======================================================================
+The source code (Python logic, algorithms, API structure) is licensed under the MIT LICENSE.
+See the 'LICENSE' file for details.
+
+You are free to use, modify, and distribute the code for both personal and commercial purposes.
+
+=======================================================================
+2. DATASETS & RULES
+=======================================================================
+The dictionary database (dictionary.db), linguistic rules, and data assets are licensed under CC BY-NC-SA 4.0 (Creative Commons Attribution-NonCommercial-ShareAlike 4.0).
+See the 'LICENSE-DATA' file for details.
+
+You may NOT use the data for commercial purposes without permission.
+
+=======================================================================
+COMMERCIAL INQUIRIES
+=======================================================================
+For commercial use of the dictionary data, please contact:
+- Email: choudhariprathmesh001@gmail.com
+- GitHub: @iampratham29
