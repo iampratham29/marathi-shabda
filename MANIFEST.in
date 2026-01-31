@@ -1,4 +1,6 @@
 include src/marathi_shabda/data/*.db
 include README.md
 include LICENSE
+include LICENSE-CODE
+include LICENSE-DATA
 include CONTRIBUTING.md

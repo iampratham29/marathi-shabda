@@ -1,64 +1,30 @@
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+# DUAL LICENSE AGREEMENT
 
-Copyright (c) 2026 Prathmesh Santosh Choudhari, Vedangi Deepak Deshpande, Siddhant Akash Bobde
+This project uses a split licensing model to balance open-source collaboration with data protection.
 
-=======================================================================
+## 1. SOURCE CODE (Open Source)
+The source code (Python logic, algorithms, API structure) is licensed under the **MIT License**.
+You are free to use, modify, and distribute the code for both personal and commercial purposes.
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+See [LICENSE-CODE](LICENSE-CODE) for details.
 
-To view a copy of this license, visit:
-http://creativecommons.org/licenses/by-nc-sa/4.0/
+## 2. DATASETS & RULES (Restricted)
+The dictionary database (`dictionary.db`), linguistic rules, and data assets are licensed under **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0).
+You may NOT use the data for commercial purposes without permission.
 
-=======================================================================
+See [LICENSE-DATA](LICENSE-DATA) for details.
 
-YOU ARE FREE TO:
+---
 
-- Share: copy and redistribute the material in any medium or format
-- Adapt: remix, transform, and build upon the material
+## Summary Table
 
-UNDER THE FOLLOWING TERMS:
+| Component | License | Commercial Use? |
+|-----------|---------|-----------------|
+| Python Code (`.py`) | **MIT** | ✅ YES |
+| Dictionary (`.db`) | **CC BY-NC-SA 4.0** | ❌ NO (Requires License) |
+| Linguistic Rules | **CC BY-NC-SA 4.0** | ❌ NO (Requires License) |
 
-- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- NonCommercial: You may not use the material for commercial purposes.
-- ShareAlike: If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
-
-=======================================================================
-
-PERMITTED USES (Non-Commercial):
-
-✅ Educational institutions and training programs
-✅ Academic research and publications
-✅ Personal learning and experimentation
-✅ Non-profit organizations
-✅ Open-source projects (non-commercial)
-✅ Student projects and assignments
-
-PROHIBITED USES (Commercial):
-
-❌ Commercial software products or services
-❌ Business applications or internal tools
-❌ Selling or monetizing the software
-❌ SaaS or API services for profit
-❌ Consulting services using this software
-
-=======================================================================
-
-COMMERCIAL LICENSING:
-
-For commercial use, please contact us for a commercial license:
-
-- Email: prathmesh@example.com
-- GitHub: @iampratham29
-- Subject: "marathi-shabda Commercial License Inquiry"
-
-We offer flexible commercial licensing options for businesses and enterprises.
-
-=======================================================================
-
-NO WARRANTY:
-
-This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
-
-=======================================================================
-
-Full legal text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+## Commercial Inquiries
+For commercial use of the dictionary data, please contact:
+- **Email**: prathmesh@example.com
+- **GitHub**: @iampratham29

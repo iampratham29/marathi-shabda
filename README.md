@@ -23,22 +23,16 @@
 
 ## 📜 वापराचे नियम आणि परवाना (License & Guidelines)
 
-हे सॉफ्टवेअर **CC BY-NC-SA 4.0** (Creative Commons Non-Commercial) परवान्याअंतर्गत उपलब्ध आहे.
+हे प्रोजेक्ट **Dual Licensing** (दोन परवाने) मॉडेलवर चालते:
 
-### ✅ मोफत वापर (Free Use)
-खालील कारणांसाठी तुम्ही हे मोफत वापरू शकता:
-- 🎓 **शाळा/कॉलेजचे प्रकल्प आणि शिक्षण** (Education)
-- 🔬 **संशोधन** (Research)
-- 🏠 **वैयक्तिक अभ्यास** (Personal Use)
-- 🤝 **विना-नफा संस्था** (Non-profit NGOs)
+1. **Source Code (MIT)**: सॉफ्टवेअरचा कोड **MIT License** अंतर्गत आहे. 
+   - ✅ तुम्ही कोड वापरू शकता, बदलू शकता (व्यावसायिक वापरासाठी सुद्धा).
 
-### ❌ व्यावसायिक वापर (Commercial Use)
-खालील कारणांसाठी **परवानगी घेणे अनिवार्य** आहे:
-- 💼 **व्यावसायिक सॉफ्टवेअर किंवा ॲप्स** (Business Apps)
-- 💰 **पैसे कमावण्यासाठी केलेले प्रोजेक्ट्स** (For-profit Services)
-- 🏢 **कंपनी अंतर्गत टूल्स** (Internal Company Tools)
+2. **Data & Dictionary (CC BY-NC-SA 4.0)**: शब्दकोश आणि डेटा **Creative Commons Non-Commercial** आहे.
+   - ❌ डेटाचा वापर पैसे कमावण्यासाठी (Commercial Use) करता येणार नाही.
+   - ✅ शिक्षण आणि संशोधनासाठी डेटा मोफत आहे.
 
-**व्यावसायिक लायसन्ससाठी संपर्क करा:**
+**व्यावसायिक वापरासाठी संपर्क (For Commercial Data Usage):**
 - **Email**: choudhariprathmesh001@gmail.com
 - **GitHub**: [@iampratham29](https://github.com/iampratham29)
 
@@ -106,27 +100,21 @@ It works completely **offline** with no internet dependency.
 
 ## License & Usage Guidelines
 
-This software is licensed under **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International).
+This project uses a **Split Licensing Model**:
 
-### ✅ Free for Educational & Training Use
-You can freely use this library for:
-- Educational institutions and training programs
-- Academic research and publications
-- Personal learning and experimentation
-- Non-profit organizations
-- Student projects and assignments
+### 1. Source Code (MIT License)
+The Python code, algorithms, and API structure are licensed under the **MIT License**.
+- ✅ You **CAN** use the code for commercial software.
+- ✅ You **CAN** modify and distribute the code logic.
 
-### ❌ Commercial Licensing Required
-You **cannot** use it for the following without a commercial license:
-- Commercial software products or services
-- Business applications or internal tools
-- Selling or monetizing the software
-- SaaS or API services for profit
+### 2. Data & Dictionary (CC BY-NC-SA 4.0)
+The dictionary database (`dictionary.db`) and linguistic rules are licensed under **Creative Commons Non-Commercial**.
+- ❌ You **CANNOT** sell the data or use it in commercial products without a license.
+- ✅ Free for education, research, and non-profit use.
 
-**For commercial inquiries:**
+**For commercial data licensing:**
 - **Email**: choudhariprathmesh001@gmail.com
 - **GitHub**: [@iampratham29](https://github.com/iampratham29)
-- **Subject**: "marathi-shabda Commercial License Inquiry"
 
 ---
 
