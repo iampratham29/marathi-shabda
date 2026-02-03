@@ -13,6 +13,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Compound word splitting (experimental)
 - Performance optimizations
 
+## [0.1.3] - 2026-02-03
+
+### Added
+- **Irregular Word Handling**: Added exception mapping for words like "मुली" (muli) which now correctly map to "मुलगी" (mulgi) instead of "मूल" (mul).
+- **Stem Alternations**: Added rules for oblique-to-direct conversions (e.g., "मुला" -> "मुलगा") and vowel lengthening (short 'u' to long 'uu').
+
+### Fixed
+- **Irregular Word Handling**: Added exception mapping for words like "मुली" (muli) which now correctly map to "मुलगी" (mulgi) instead of "मूल" (mul).
+- **Stem Alternations**: Added rules for oblique-to-direct conversions (e.g., "मुला" -> "मुलगा") and vowel lengthening (short 'u' to long 'uu').
+
+### Documentation
+- Replaced confusing "mulane" example with "jagane" in `README.md` and docstrings.
+
 ## [0.1.2] - 2026-01-30
 
 ### Changed
