@@ -19,6 +19,13 @@ STEM_ALTERNATIONS = [
     
     # Common consonant clusters
     ("्य", "ी"),  # General य-ending oblique
+    
+    # Vowel lengthening (Reverse Upantya Swar)
+    ("ु", "ू"),  # Short u -> Long uu (e.g. मुल -> मूल)
+    ("ि", "ी"),  # Short i -> Long ii (e.g. मिळ -> मीळ)
+
+    # Oblique to direct (specific endings)
+    ("ा", "गा"), # Oblique ending in 'aa' -> 'ga' (mul -> mulga)
 ]
 
 

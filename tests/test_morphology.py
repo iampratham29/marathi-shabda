@@ -84,6 +84,14 @@ class TestStemAlternations:
         # Should generate alternations
         assert len(candidates) >= 1
 
+    
+    def test_mulacha_stems(self):
+        """Test specific stems for मुलाचा problem."""
+        candidates = apply_stem_alternations("मुलासाठी")
+        print(candidates)
+        assert "मुलगा" in candidates
+        assert "मूल" in candidates
+
 
 # Note: Full lemmatizer tests require a real database
 # These will be integration tests once database is provided
