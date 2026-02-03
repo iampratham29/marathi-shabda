@@ -146,9 +146,9 @@ def analyze_word(word: str) -> MorphologyResult:
         InvalidInputError: If input is empty or invalid
     
     Examples:
-        >>> result = analyze_word("मुलाने")
+        >>> result = analyze_word("जगाने")
         >>> print(result.lemma)
-        'मुल'
+        'जग'
         >>> print(result.pos)
         POSTag.NOUN
         >>> print(result.vibhakti)

@@ -11,6 +11,7 @@ from marathi_shabda.dictionary import DictionaryAdapter
 from marathi_shabda.normalization import safe_normalize
 from marathi_shabda.morphology.vibhakti_rules import get_vibhakti_rules_sorted
 from marathi_shabda.morphology.stem_alternations import apply_stem_alternations
+from marathi_shabda.morphology.exceptions import IRREGULAR_STEMS
 
 
 def extract_lemma(
@@ -72,6 +73,15 @@ def extract_lemma(
             
             if not candidate_stem:  # Don't strip entire word
                 continue
+            
+            # 3a. Check for irregular stem exceptions
+            if candidate_stem in IRREGULAR_STEMS:
+                exception_lemma = IRREGULAR_STEMS[candidate_stem]
+                # Verify mapped lemma exists in dictionary
+                if dict_adapter.exists(exception_lemma):
+                    all_candidates.append((exception_lemma, rule.vibhakti_type))
+                    # If we found an exception match, we might want to prioritize it
+                    # But for now, let's treat it as a strong candidate
             
             # Apply stem alternations
             stem_variants = apply_stem_alternations(candidate_stem)

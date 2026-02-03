@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "marathi-shabda"
-version = "0.1.2"
-description = "Deterministic, offline Marathi word analysis library (shabda = word in Marathi)"
+version = "0.1.3"
+description = "Deterministic, offline Marathi word dictionary and analysis library (shabda = word in Marathi)"
 readme = "README.md"
 requires-python = ">=3.8"
 # Dual License: MIT (Code) + CC-BY-NC-SA-4.0 (Data)
