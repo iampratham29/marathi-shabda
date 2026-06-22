@@ -161,7 +161,7 @@ print(result.found)              # True
 - **Rule-based**: Uses linguistic rules for vibhakti and form handling.
 - **Explanation**: Every result comes with a reason for why it was derived.
 
-### Limitations (v0.1.3)
+### Limitations (v0.1.4)
 - **Single words only**: Does not parse full sentences.
 - **Conservative**: Prefers to say "Unknown" rather than guessing wrong.
 - **Transliteration**: Roman script support is approximate.
