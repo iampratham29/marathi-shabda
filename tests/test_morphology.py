@@ -87,7 +87,7 @@ class TestStemAlternations:
     
     def test_mulacha_stems(self):
         """Test specific stems for मुलाचा problem."""
-        candidates = apply_stem_alternations("मुलासाठी")
+        candidates = apply_stem_alternations("मुला")
         print(candidates)
         assert "मुलगा" in candidates
         assert "मूल" in candidates

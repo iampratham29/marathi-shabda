@@ -54,6 +54,7 @@ Issues = "https://github.com/iampratham29/marathi-shabda/issues"
 
 [project.scripts]
 marathi-shabda = "marathi_shabda.cli:main"
+marathi-dict   = "marathi_shabda.cli:dict_cli"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

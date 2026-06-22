@@ -1,0 +1,82 @@
+[
+  {
+    "devanagari": "पाणी",
+    "key": "pani",
+    "meaning2": "water",
+    "definition_mr": "जीवन",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "मुलगा",
+    "key": "mulga",
+    "meaning2": "boy",
+    "definition_mr": "पुत्र",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "मुलगी",
+    "key": "mulgi",
+    "meaning2": "girl",
+    "definition_mr": "कन्या",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "घर",
+    "key": "ghar",
+    "meaning2": "house",
+    "definition_mr": "गृह",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "झाड",
+    "key": "zhad",
+    "meaning2": "tree",
+    "definition_mr": "वृक्ष",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "फूल",
+    "key": "phool",
+    "meaning2": "flower",
+    "definition_mr": "पुष्प",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "पुस्तक",
+    "key": "pustak",
+    "meaning2": "book",
+    "definition_mr": "ग्रंथ",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "हात",
+    "key": "haat",
+    "meaning2": "hand",
+    "definition_mr": "कर",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "पाय",
+    "key": "paay",
+    "meaning2": "leg",
+    "definition_mr": "पाद",
+    "pos": "noun",
+    "source": "mock"
+  },
+  {
+    "devanagari": "माणूस",
+    "key": "manoos",
+    "meaning2": "man",
+    "definition_mr": "मानव",
+    "pos": "noun",
+    "source": "mock"
+  }
+]
