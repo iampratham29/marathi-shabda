@@ -157,11 +157,11 @@ print(result.found)              # True
 ## Technical Details
 
 ### Architecture
-- **Dictionary-backed**: Uses a built-in SQLite database for authoritative meanings.
+- **Dictionary-backed**: Uses a built-in SQLite database containing over 46,000+ words (enriched from Wiktionary, Kaikki, and localized glossaries) for authoritative meanings.
 - **Rule-based**: Uses linguistic rules for vibhakti and form handling.
 - **Explanation**: Every result comes with a reason for why it was derived.
 
-### Limitations (v0.1.2)
+### Limitations (v0.1.3)
 - **Single words only**: Does not parse full sentences.
 - **Conservative**: Prefers to say "Unknown" rather than guessing wrong.
 - **Transliteration**: Roman script support is approximate.
@@ -178,6 +178,8 @@ print(result.found)              # True
 
 ## Acknowledgments
 
+- **Wiktionary (Wikimedia Foundation)**: For providing an open, collaborative dictionary. The dictionary data incorporated here is derived from the English and Marathi Wiktionary dumps, used solely for educational and non-commercial research purposes.
+- **Kaikki.org**: For providing structured, machine-readable JSON extracts of Wiktionary data, which made parsing Marathi lemmas and definitions possible.
 - **[@vinodnimbalkar](https://github.com/vinodnimbalkar)** - For valuable open-source contributions to the Marathi language ecosystem.
 - Marathi language scholars and grammarians.
 - Open-source NLP community.

@@ -17,8 +17,8 @@ import pytest
 SCRIPTS_DIR = Path(__file__).parent.parent / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-import fetch_kaikki
-import fetch_glossaries
+import fetch_kaikki  # type: ignore
+import fetch_glossaries  # type: ignore
 
 
 # ===========================================================================

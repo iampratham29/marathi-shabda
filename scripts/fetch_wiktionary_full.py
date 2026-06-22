@@ -73,7 +73,7 @@ def api_request(params: dict, retries: int = 3) -> dict:
     """
     url = WIKTIONARY_API + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    last_exc = None
+    last_exc: Exception = RuntimeError("Unknown error")
 
     for attempt in range(retries):
         try:
