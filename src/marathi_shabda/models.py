@@ -55,6 +55,7 @@ class DictionaryEntry:
     pos: Optional[POSTag] = None  # Future: when DB schema extended
     gender: Optional[str] = None  # Future
     number: Optional[str] = None  # Future
+    source: Optional[str] = None  # Data source tag
 
 
 @dataclass
