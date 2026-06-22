@@ -13,6 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Compound word splitting (experimental)
 - Performance optimizations
 
+## [0.1.4] - 2026-06-22
+
+### Added
+- **Massive Dictionary Expansion**: Enriched the built-in SQLite dictionary from ~2,500 words to **over 46,000+ words**!
+- **Bulk Dictionary Fetchers**: Added new automated scripts to parse and merge data from Wiktionary, Kaikki.org, and various localized Marathi-English glossaries.
+- **GitHub Actions (OIDC)**: Migrated PyPI deployments to use Trusted Publishing (OIDC) for passwordless, automated releases via GitHub Actions.
+
+### Changed
+- Updated documentation and README to reflect the 46k+ word count.
+- Added data attribution for Wikimedia Foundation and Kaikki.org.
+
 ## [0.1.3] - 2026-02-03
 
 ### Added
