@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Compound word splitting (experimental)
 - Performance optimizations
 
+## [0.1.5] - 2026-06-23
+
+### Added
+- **Pronoun Conjugations**: Fully added 94 irregular pronoun variations into the dictionary (forms of मी, तू, तो, ती, ते, स्वतः).
+- **Pronoun POS Tagging**: Mapped pronouns carefully so they reliably return English meanings denoting their vibhakti case (e.g. "by me", "to him") and are tagged properly as `pronoun`.
+
+
 ## [0.1.4] - 2026-06-22
 
 ### Added
