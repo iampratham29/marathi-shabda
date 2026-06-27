@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "marathi-shabda"
-version = "0.1.5"
+version = "0.2.0"
 description = "Deterministic, offline Marathi word dictionary and analysis library (shabda = word in Marathi)"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -13,7 +13,7 @@ license = {text = "Dual License: MIT (Code) / CC-BY-NC-SA-4.0 (Data)"}
 authors = [
     {name = "Prathmesh Santosh Choudhari, Siddhant Akash Bobde, Vedangi Deepak Deshpande"}
 ]
-keywords = ["marathi", "nlp", "morphology", "dictionary", "devanagari", "lemmatization"]
+keywords = ["marathi", "nlp", "morphology", "dictionary", "devanagari", "lemmatization", "transliteration", "pratham-style"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

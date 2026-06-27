@@ -7,11 +7,50 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Planned for v0.2.0
-- Extended database schema with POS, gender, number columns
-- Improved verb conjugation analysis
-- Compound word splitting (experimental)
-- Performance optimizations
+## [0.2.0] - 2026-06-27
+
+### Added
+- **Pratham Transliteration Style** — a new, Marathi-first bidirectional Roman
+  transliteration system built into `marathi_shabda.normalization`:
+  - `dev_to_roman(text)` — deterministic Devanagari → Pratham Roman with full
+    Marathi schwa deletion at word boundaries.
+  - `roman_to_dev(roman)` — returns **all plausible Devanagari** candidates for
+    a given Pratham Roman string, including both inherent-a and virama forms for
+    bare-consonant-final words.
+  - `transliterate`, `to_roman`, `to_devanagari` — convenient public aliases.
+  - Mapping tables (`VOWEL_LETTERS`, `VOWEL_SIGNS`, `CONSONANTS`) exported as
+    the single source of truth for the scheme.
+
+- **Full Marathi character support**:
+  - Retroflex consonants use **UPPERCASE** (T Th D Dh N L R) to distinguish
+    from dental lowercase (t th d dh n).
+  - Marathi `ळ` → `L`, eyelash ra `ऱ` → `R` (both absent from Hindi/Urdu schemes).
+  - Loan consonants: `KH G z .D .Dh f q` via nukta mapping.
+  - Chandrabindu `ँ` → `ñ` (U+00F1).
+  - Anusvara assimilation by place of articulation: `ng ny N n m .n`.
+
+- **49 comprehensive tests** across 12 transliteration categories in
+  `tests/test_transliterator.py`, each with embedded `REQUIREMENT_PROMPT`
+  documentation and a standalone `run_all()` runner.
+
+### Changed
+- Removed all references to the Rekhta transliteration scheme; the library now
+  ships its own documented **Pratham Transliteration Style**.
+- `roman_to_devanagari()` (legacy) is preserved unchanged for backward
+  compatibility with `normalize_input`.
+
+### Transliteration Key (Pratham Style)
+| Category | Roman notation |
+|---|---|
+| Short vowels | `a  i  u  e  o` |
+| Long vowels  | `aa  ii  uu` |
+| Diphthongs   | `ai  au` |
+| Retroflex    | `T  Th  D  Dh  N  L  R` |
+| Dental       | `t  th  d  dh  n` |
+| Aspirates    | `kh  gh  ch  chh  jh  ph  bh` |
+| Loans        | `KH  G  z  .D  .Dh  f  q` |
+| Chandrabindu | `ñ` |
+| Anusvara     | `ng  ny  N  n  m  .n` |
 
 ## [0.1.5] - 2026-06-23
 
