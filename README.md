@@ -154,6 +154,44 @@ print(result.found)              # True
 
 ---
 
+## Pratham Transliteration Style (v0.2.0)
+
+v0.2.0 ships a **Pratham Transliteration Style** — a Marathi-first, phonetically-accurate
+bidirectional Roman scheme built into the library.
+
+```python
+from marathi_shabda.normalization import dev_to_roman, roman_to_dev
+
+# Devanagari → Pratham Roman
+dev_to_roman("संकट")    # 'sangkaT'
+dev_to_roman("काळ")     # 'kaaL'
+dev_to_roman("शब्द")    # 'shabd'
+dev_to_roman("माँ")     # 'maaÃ±'
+
+# Pratham Roman → Devanagari (returns all plausible candidates)
+roman_to_dev("vadan")    # ['वदन', 'वदन्']  ← inherent-a + virama forms
+roman_to_dev("sangkaT")  # ['संकट', 'संकट्']
+roman_to_dev("kaaL")     # ['काळ', 'काळ्']
+```
+
+**Pratham Transliteration Key:**
+
+| Category | Roman |
+|---|---|
+| Short vowels | `a  i  u  e  o` |
+| Long vowels  | `aa  ii  uu` |
+| Diphthongs   | `ai  au` |
+| Retroflex (uppercase) | `T  Th  D  Dh  N  L  R` |
+| Dental (lowercase)    | `t  th  d  dh  n` |
+| Aspirates | `kh  gh  ch  chh  jh  ph  bh` |
+| Loan consonants | `KH  G  z  .D  .Dh  f  q` |
+| Chandrabindu | `ñ` (U+00F1) |
+| Anusvara    | `ng  ny  N  n  m  .n` |
+| Marathi ळ   | `L` |
+| Marathi ऱ   | `R` |
+
+---
+
 ## Technical Details
 
 ### Architecture
@@ -161,10 +199,11 @@ print(result.found)              # True
 - **Rule-based**: Uses linguistic rules for vibhakti and form handling.
 - **Explanation**: Every result comes with a reason for why it was derived.
 
-### Limitations (v0.1.5)
+### Limitations (v0.2.0)
 - **Single words only**: Does not parse full sentences.
 - **Conservative**: Prefers to say "Unknown" rather than guessing wrong.
-- **Transliteration**: Roman script support is approximate.
+- **Transliteration round-trip**: 'n' before dental and 'm' before labial are
+  always treated as anusvara in `roman_to_dev` (known lossiness, documented).
 
 ---
 
